@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Fondo del candado -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,0C8.69,0 6,2.69 6,6V10H4C2.34,10 1,11.34 1,13V21C1,22.66 2.34,24 4,24H20C21.66,24 23,22.66 23,21V13C23,11.34 21.66,10 20,10H18V6C18,2.69 15.31,0 12,0zM12,2C14.21,2 16,3.79 16,6V10H8V6C8,3.79 9.79,2 12,2zM4,12H20C20.55,12 21,12.45 21,13V19C21,19.55 20.55,20 20,20H4C3.45,20 3,19.55 3,19V13C3,12.45 3.45,12 4,12zM12,15C11.45,15 11,15.45 11,16V18C11,18.55 11.45,19 12,19C12.55,19 13,18.55 13,18V16C13,15.45 12.55,15 12,15z"/>
+</vector>
+
