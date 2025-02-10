@@ -5,6 +5,113 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundMainColor"
     tools:context=".GestionarEmpresa">
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/tvCrearEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Crear Empresa"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etRazonSocial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo Razón Social -->
+    <EditText
+        android:id="@+id/etRazonSocial"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="68dp"
+        android:hint="Razón Social"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C7C2C2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo RUC -->
+    <EditText
+        android:id="@+id/etRuc"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:hint="RUC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C7C2C2"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRazonSocial" />
+
+
+    <!-- Representante Legal -->
+    <EditText
+        android:id="@+id/etRepresentanteLegal"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:hint="Representante Legal"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C7C2C2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNumSucursales" />
+
+
+    <!-- Campo Número de Sucursales -->
+    <EditText
+        android:id="@+id/etNumSucursales"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:hint="Número de Sucursales"
+        android:textColor="#FFFFFF"
+        android:inputType="number"
+        android:textColorHint="#C7C2C2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etRuc" />
+
+    <!-- Campo Actividad Comercial -->
+
+    <!-- Botón Crear -->
+
+    <EditText
+        android:id="@+id/etActividadComercial"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:hint="Actividad Comercial"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#C7C2C2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRepresentanteLegal" />
+
+    <Button
+        android:id="@+id/btnCrearEmpresa"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/backgroundButtonColor"
+        android:text="Crear"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etActividadComercial" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

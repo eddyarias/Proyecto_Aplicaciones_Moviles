@@ -5,6 +5,103 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundMainColor"
     tools:context=".GestionarEmpleado">
+
+    <!-- Título "Crear Empleado" -->
+    <TextView
+        android:id="@+id/tvCrearEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Crear Empleado"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo Nombres Completos -->
+    <EditText
+        android:id="@+id/etNombresCompletos"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="68dp"
+        android:hint="Nombres Completos"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCrearEmpleado" />
+
+    <!-- Campo Cédula -->
+    <EditText
+        android:id="@+id/etCedula"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:hint="Cédula"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNombresCompletos" />
+
+    <!-- Campo Número de Celular -->
+    <EditText
+        android:id="@+id/etCelular"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:hint="Número de Celular"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCedula" />
+
+    <!-- Campo Fecha de Nacimiento -->
+    <EditText
+        android:id="@+id/etFechaNacimiento"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:hint="Fecha de Nacimiento"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCelular" />
+
+    <!-- Spinner para seleccionar el puesto -->
+    <Spinner
+        android:id="@+id/spinnerPuesto"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etFechaNacimiento" />
+
+    <!-- Botón Crear -->
+    <Button
+        android:id="@+id/btnCrearEmpleado"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/backgroundButtonColor"
+        app:cornerRadius="10dp"
+        android:text="Crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPuesto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

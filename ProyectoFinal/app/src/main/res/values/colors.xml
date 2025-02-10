@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="backgroundMainColor">#161622</color>
+    <color name="backgroundButtonColor">#0066ff</color>
+    <color name="backgroundSecondaryColor">#27273a</color>
+
+
     <color name="white">#FFFFFFFF</color>
     <color name="primaryColor">#6200EE</color>
     <color name="primaryLightColor">#BB86FC</color>

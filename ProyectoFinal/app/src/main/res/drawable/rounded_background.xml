@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- Fondo del botón -->
-    <solid android:color="@color/primaryColor" />
+    <solid android:color="@color/backgroundSecondaryColor" />
 
     <!-- Bordes redondeados -->
     <corners android:radius="16dp" />
@@ -11,6 +11,6 @@
     <!-- Sombra o borde opcional -->
     <stroke
         android:width="2dp"
-        android:color="@color/secondaryColor" />
+        android:color="@color/backgroundSecondaryColor" />
 
 </shape>

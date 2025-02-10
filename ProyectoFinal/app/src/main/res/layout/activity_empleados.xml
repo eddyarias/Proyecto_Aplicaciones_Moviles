@@ -5,6 +5,93 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundMainColor"
     tools:context=".Empleados">
+
+    <!-- Flecha de retroceso -->
+    <ImageView
+        android:id="@+id/backAEmpresas"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_background"
+        android:contentDescription="Flecha de retroceso"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título "Lista de Empresas" -->
+
+    <!-- Botón Crear -->
+
+    <!-- Lista de Empresas -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/empleadosList"
+        android:layout_width="392dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listTitle" />
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="332dp"
+        android:text="Lista de Empleados"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_crear_empleado"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_create"
+        app:layout_constraintBottom_toTopOf="@+id/listTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Crear"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_empleado"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_empleado"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_empleado" />
+
+    <TextView
+        android:id="@+id/tvInfoEmpresa"
+        android:layout_width="311dp"
+        android:layout_height="124dp"
+        android:background="@color/backgroundSecondaryColor"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_crear_empleado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

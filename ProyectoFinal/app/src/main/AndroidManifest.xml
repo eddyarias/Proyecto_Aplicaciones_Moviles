@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ProyectoFinal"
         tools:targetApi="31">
         <activity
+            android:name=".GestionarEmpleado"
+            android:exported="false" />
+        <activity
+            android:name=".GestionarEmpresa"
+            android:exported="false" />
+        <activity
+            android:name=".Empleados"
+            android:exported="false" />
+        <activity
+            android:name=".Empresas"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -5,6 +5,75 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundMainColor"
     tools:context=".Empresas">
+
+    <!-- Flecha de retroceso -->
+    <ImageView
+        android:id="@+id/backAEmpresas"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_background"
+        android:contentDescription="Flecha de retroceso"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título "Lista de Empresas" -->
+
+    <!-- Botón Crear -->
+
+    <!-- Lista de Empresas -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/empleadosList"
+        android:layout_width="363dp"
+        android:layout_height="406dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listTitle" />
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="184dp"
+        android:text="Lista de Empresas"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_crear_empleado"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_create"
+        app:layout_constraintBottom_toTopOf="@+id/listTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Crear"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_crear_empleado"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/btn_crear_empleado"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crear_empleado" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

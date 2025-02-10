@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Proyecto Final</string>
+
+
+    <string-array name="puestos_array">
+        <item>Bodeguero</item>
+        <item>Administrativo</item>
+        <item>Doctor</item>
+        <item>Enfermera</item>
+    </string-array>
+
 </resources>

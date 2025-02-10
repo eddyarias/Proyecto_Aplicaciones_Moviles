@@ -1,6 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/backgroundMainColor"
+    >
+
+    <ImageView
+        android:id="@+id/companyIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_company_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/companyName"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:text="Nombre de la empresa"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_ver_empleados"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_ver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Ver"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ver_empleados"
+        app:layout_constraintStart_toStartOf="@+id/btn_ver_empleados"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ver_empleados" />
+
+
+    <ImageButton
+        android:id="@+id/btn_actualizar_empresa"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_actualizar_empresa"
+        app:layout_constraintStart_toStartOf="@+id/btn_actualizar_empresa"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar_empresa" />
+
+    <ImageButton
+        android:id="@+id/btn_eliminar_empresa"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="53dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="4dp"
+        android:text="Eliminar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_eliminar_empresa"
+        app:layout_constraintStart_toStartOf="@+id/btn_eliminar_empresa"
+        app:layout_constraintTop_toBottomOf="@+id/btn_eliminar_empresa" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/backgroundSecondaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
