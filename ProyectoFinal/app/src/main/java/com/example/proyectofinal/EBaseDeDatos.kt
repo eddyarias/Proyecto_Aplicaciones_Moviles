@@ -7,6 +7,7 @@ class EBaseDeDatos {
         var dbHelper: ESqliteHelper? = null
         var tablaEmpresa: ESqliteHelperEmpresa? = null
         var tablaEmpleado: ESqliteHelperEmpleado? = null
+        //hola
 
         fun inicializarBaseDeDatos(contexto: Context) {
             dbHelper = ESqliteHelper(contexto)
